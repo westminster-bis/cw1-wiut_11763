@@ -1,6 +1,8 @@
 from classes import CW
 from datetime import datetime
 
+name = input("Enter your name:")
+
 csf_cw = CW(
     deadline=datetime(2020, 12, 3, 23, 59),
     submission_time=datetime(2020, 12, 5, 4, 59)
