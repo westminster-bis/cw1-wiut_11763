@@ -127,6 +127,5 @@ class CW:
         """Displays mark message fully"""
 
         mark_category = self.get_full_mark_category()
-        print(mark_category)
         return self.marks[mark_category]
 
