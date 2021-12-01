@@ -30,19 +30,20 @@ students = [
 
 ]
 
-for student in students:
-    cw = CW(
-        name=student['module_name'],
-        deadline=student['deadline'],
-        submission_time=student['submission_time'],
-    )
+if __name__ == '__main__':
+    for student in students:
+        cw = CW(
+            name=student['module_name'],
+            deadline=student['deadline'],
+            submission_time=student['submission_time'],
+        )
 
-    student.update(full_mark=cw.get_full_mark())
+        student.update(full_mark=cw.get_full_mark())
 
-    message = f"{student['full_name']} \n" \
-              f"ID: {student['id']}, Group: {student['group']} \n" \
-              f"Module: {student['module_name']} \n" \
-              f"Result: {student['full_mark']}"
-    print('-'*5)
-    print(message)
+        message = f"{student['full_name']} \n" \
+                  f"ID: {student['id']}, Group: {student['group']} \n" \
+                  f"Module: {student['module_name']} \n" \
+                  f"Result: {student['full_mark']}"
+        print('-'*5)
+        print(message)
 
