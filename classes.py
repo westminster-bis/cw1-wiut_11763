@@ -129,3 +129,9 @@ class CW:
         mark_category = self.get_full_mark_category()
         return self.marks[mark_category]
 
+
+class Student:
+    def __init__(self, name, id, group):
+        self.id = id
+        self.name = name
+        self.group = group
